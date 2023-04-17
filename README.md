@@ -1,5 +1,9 @@
 # javascript
 
+## Steps
+1) Run  "npm install"
+2) Run "npm start"
+
 **Basic syntax:** variables, data types, operators, and conditional statements, such as if/else statements.<br/><br/>
 **Functions:** what functions are, how to define them, and how they can take in parameters and return values.<br/><br/>
 **Loops:** loops and how to use the for and while loop to repeatedly execute code.<br/><br/>
