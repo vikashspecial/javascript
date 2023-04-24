@@ -8,16 +8,21 @@
 </head>
 
 <body>
+    <a href="/">Back</a>
+
     <div class="container">
-        <h2>ToDo:</h2>
+        <div>
+            <button id="toggleCreate" onclick="toggleCreate()">Show ToDo</button>
+        </div>
         <form class="form-container">
+            <h3>Create ToDo:</h3>
             <div class="form-input-container">
                 <label for="title">Title</label>
-                <input type="text" class="form-input" id="title" name="title" />
+                <input type="text" class="form-input" value="Title" id="title" name="title" />
             </div>
             <div class="form-input-container">
                 <label for="task">Task</label>
-                <textarea id="task" name="task" class="form-input" rows="3" cols="20"></textarea>
+                <textarea id="task" name="task" class="form-input" rows="3" cols="20">Task description</textarea>
             </div>
             <div class="form-input-container">
                 <label for="date">Date</label>
@@ -26,13 +31,19 @@
 
             <div class="form-input-container actions">
                 <input class="btn btn-secondary" type="reset" value="Reset" />
-                <input class="btn btn-primary" onclick="validateTask()" type="button" value="Create" />
+                <input class="btn btn-primary" id="createToDo" type="button" value="Create" />
             </div>
         </form>
-
+        <!-- TODO List starts here -->
         <div>
             <h3>ToDos - </h3>
-            <div id="todo-list"></div>
+            <div id="todo-list">
+                <div class="todo-item">
+                    <div class="title">Title</div>
+                    <div class="task">Task description</div>
+                    <div class="date">2023-04-25</div>
+                </div>
+            </div>
         </div>
     </div>
 

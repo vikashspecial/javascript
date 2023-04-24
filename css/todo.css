@@ -1,3 +1,6 @@
+body.danger {
+    background-color: red;
+}
 .container {
     border: 1px dotted black;
     width: 400px;
@@ -21,9 +24,13 @@
 }
 
 .container .form-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 24px;
+}
+
+.container .form-container.show {
+    display: flex;
 }
 
 .actions {
@@ -40,4 +47,34 @@
     background-color: #447665;
     border: 1px solid green;
     color: white;
+}
+
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#todo-list.make-red .todo-item {
+    background-color: red;
+}
+
+
+#todo-list .todo-item {
+    border: 1px solid black;
+    background-color: rgb(71, 215, 172);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.todo-item .title {
+    font-weight: bold;
+}
+
+.todo-item .date {
+    margin-top: 20px;
+    text-align: right;
 }
